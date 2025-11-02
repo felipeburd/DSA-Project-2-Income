@@ -1,0 +1,3 @@
+/workspaces/DSA-Project-2-Income/build/CMakeFiles/app.dir
+/workspaces/DSA-Project-2-Income/build/CMakeFiles/edit_cache.dir
+/workspaces/DSA-Project-2-Income/build/CMakeFiles/rebuild_cache.dir
