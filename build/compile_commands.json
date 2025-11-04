@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/workspaces/DSA-Project-2-Income/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -o CMakeFiles/app.dir/src/main.cpp.o -c /workspaces/DSA-Project-2-Income/src/main.cpp",
+  "file": "/workspaces/DSA-Project-2-Income/src/main.cpp",
+  "output": "CMakeFiles/app.dir/src/main.cpp.o"
+},
+{
+  "directory": "/workspaces/DSA-Project-2-Income/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -o CMakeFiles/app.dir/src/mergeSort.cpp.o -c /workspaces/DSA-Project-2-Income/src/mergeSort.cpp",
+  "file": "/workspaces/DSA-Project-2-Income/src/mergeSort.cpp",
+  "output": "CMakeFiles/app.dir/src/mergeSort.cpp.o"
+},
+{
+  "directory": "/workspaces/DSA-Project-2-Income/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -o CMakeFiles/app.dir/src/quickSort.cpp.o -c /workspaces/DSA-Project-2-Income/src/quickSort.cpp",
+  "file": "/workspaces/DSA-Project-2-Income/src/quickSort.cpp",
+  "output": "CMakeFiles/app.dir/src/quickSort.cpp.o"
+}
+]

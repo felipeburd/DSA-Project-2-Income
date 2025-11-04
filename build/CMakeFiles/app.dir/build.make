@@ -73,27 +73,59 @@ CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/main.cpp.o: /workspaces/DSA-Project-2-Income/src/main.cpp
 CMakeFiles/app.dir/src/main.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/DSA-Project-2-Income/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.cpp.o -MF CMakeFiles/app.dir/src/main.cpp.o.d -o CMakeFiles/app.dir/src/main.cpp.o -c /workspaces/DSA-Project-2-Income/src/main.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/main.cpp.o -MF CMakeFiles/app.dir/src/main.cpp.o.d -o CMakeFiles/app.dir/src/main.cpp.o -c /workspaces/DSA-Project-2-Income/src/main.cpp
 
 CMakeFiles/app.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/DSA-Project-2-Income/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/DSA-Project-2-Income/src/main.cpp > CMakeFiles/app.dir/src/main.cpp.i
 
 CMakeFiles/app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/DSA-Project-2-Income/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/DSA-Project-2-Income/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
+
+CMakeFiles/app.dir/src/mergeSort.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/mergeSort.cpp.o: /workspaces/DSA-Project-2-Income/src/mergeSort.cpp
+CMakeFiles/app.dir/src/mergeSort.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/DSA-Project-2-Income/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/mergeSort.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/mergeSort.cpp.o -MF CMakeFiles/app.dir/src/mergeSort.cpp.o.d -o CMakeFiles/app.dir/src/mergeSort.cpp.o -c /workspaces/DSA-Project-2-Income/src/mergeSort.cpp
+
+CMakeFiles/app.dir/src/mergeSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/mergeSort.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/DSA-Project-2-Income/src/mergeSort.cpp > CMakeFiles/app.dir/src/mergeSort.cpp.i
+
+CMakeFiles/app.dir/src/mergeSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/mergeSort.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/DSA-Project-2-Income/src/mergeSort.cpp -o CMakeFiles/app.dir/src/mergeSort.cpp.s
+
+CMakeFiles/app.dir/src/quickSort.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/quickSort.cpp.o: /workspaces/DSA-Project-2-Income/src/quickSort.cpp
+CMakeFiles/app.dir/src/quickSort.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/DSA-Project-2-Income/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/src/quickSort.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/quickSort.cpp.o -MF CMakeFiles/app.dir/src/quickSort.cpp.o.d -o CMakeFiles/app.dir/src/quickSort.cpp.o -c /workspaces/DSA-Project-2-Income/src/quickSort.cpp
+
+CMakeFiles/app.dir/src/quickSort.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/quickSort.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/DSA-Project-2-Income/src/quickSort.cpp > CMakeFiles/app.dir/src/quickSort.cpp.i
+
+CMakeFiles/app.dir/src/quickSort.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/quickSort.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/DSA-Project-2-Income/src/quickSort.cpp -o CMakeFiles/app.dir/src/quickSort.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
-"CMakeFiles/app.dir/src/main.cpp.o"
+"CMakeFiles/app.dir/src/main.cpp.o" \
+"CMakeFiles/app.dir/src/mergeSort.cpp.o" \
+"CMakeFiles/app.dir/src/quickSort.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
 app: CMakeFiles/app.dir/src/main.cpp.o
+app: CMakeFiles/app.dir/src/mergeSort.cpp.o
+app: CMakeFiles/app.dir/src/quickSort.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/DSA-Project-2-Income/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/DSA-Project-2-Income/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/app.dir/src/main.cpp.o -o app 
+/usr/bin/clang++ -g CMakeFiles/app.dir/src/main.cpp.o CMakeFiles/app.dir/src/mergeSort.cpp.o CMakeFiles/app.dir/src/quickSort.cpp.o -o app 

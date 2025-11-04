@@ -3,24 +3,27 @@
 #include <vector>
 #include <string>
 #include <chrono>
+#include <random>
+#include <sstream>
 #include "mergeSort.h"
 #include "quickSort.h"
 
 
 using namespace std;
 
-static vector<int> loadIncomes(const string& relPath) {
-    // Try relative to project root
-    ifstream in(relPath);
-    if (!in) {
-        // Try relative to build folder
-        in.clear();
-        in.open("../" + relPath);
+static vector<int> generateIncomes(size_t n){
+    vector<int> v; 
+    v.reserve(n); //
+
+    mt19937 rng(123); //
+    uniform_int_distribution<int> dist(20000, 200000);
+
+    for(size_t i = 0; i < n; ++i){
+        v.push_back(dist(rng));
     }
-    vector<int> v; int x;
-    while (in >> x) v.push_back(x);
-    return v;
+    return v; 
 }
+
 
 static bool isSorted(const vector<int>& a) {
     for (size_t i = 1; i < a.size(); ++i)
@@ -33,21 +36,19 @@ int main() {
     cin.tie(nullptr);
 
     cout << "=== Income Sort Interface (Project 2) ===\n";
-    cout << "Enter dataset path [default: resources/income_sample.txt]: " << flush;
-
-    string path;
+    cout << "Enter n to generate (default 100000): " << flush;
+    size_t n = 100000;
     {
         string line;
-        if (!getline(cin, line)) return 0;
-        path = line.empty() ? "resources/income_sample.txt" : line;
+        if(!getline(cin, line)) return 0;
+        if(!line.empty()) {
+            stringstream ss(line);
+            size_t tmp;
+            if(ss >> tmp) n = tmp; 
+        }
     }
-
-    vector<int> incomes = loadIncomes(path);
-    if (incomes.empty()) {
-        cerr << "Could not read data from '" << path << "' or file is empty.\n";
-        return 1;
-    }
-    cout << "Loaded " << incomes.size() << " records.\n";
+    vector<int> incomes = generateIncomes(n);
+    cout << "Generated " << incomes.size() << " incomes.\n";
 
     cout << "Choose algorithm:\n";
     cout << " 1) Merge Sort\n";

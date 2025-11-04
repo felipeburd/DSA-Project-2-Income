@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspaces/DSA-Project-2-Income/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
+  "/workspaces/DSA-Project-2-Income/src/mergeSort.cpp" "CMakeFiles/app.dir/src/mergeSort.cpp.o" "gcc" "CMakeFiles/app.dir/src/mergeSort.cpp.o.d"
+  "/workspaces/DSA-Project-2-Income/src/quickSort.cpp" "CMakeFiles/app.dir/src/quickSort.cpp.o" "gcc" "CMakeFiles/app.dir/src/quickSort.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
