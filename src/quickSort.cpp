@@ -4,10 +4,10 @@
 #include <vector>
 using namespace std;
 
-void incomeQuickSort(vector<int>& dataArray, int before, int after) {
-    int l = before;
-    int r = after;
-    int pivot = dataArray[(before + after) / 2];
+void incomeQuickSort(vector<int>& dataArray, int beginning, int end) {
+    int l = beginning;
+    int r = end;
+    int pivot = dataArray[(beginning + end) / 2];
     while (l <= r) {
         while (dataArray[l] < pivot) {
             l++;
@@ -23,9 +23,9 @@ void incomeQuickSort(vector<int>& dataArray, int before, int after) {
         }
     }
     if (before < r) {
-        incomeQuickSort(dataArray, before, r);
+        incomeQuickSort(dataArray, beginning, r);
     }
     if (l < after) {
-        incomeQuickSort(dataArray, l, after);
+        incomeQuickSort(dataArray, l, end);
     }
 }
