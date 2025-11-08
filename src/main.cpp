@@ -13,10 +13,10 @@ using namespace std;
 
 static vector<int> generateIncomes(size_t n){
     vector<int> v; 
-    v.reserve(n); //
+    v.reserve(n); 
 
-    mt19937 rng(123); //
-    uniform_int_distribution<int> dist(20000, 200000);
+    mt19937 rng(123); // used https://cplusplus.com/reference/random/mt19937/ 
+    uniform_int_distribution<int> dist(50000, 200000);
 
     for(size_t i = 0; i < n; ++i){
         v.push_back(dist(rng));
@@ -74,8 +74,8 @@ int main() {
     cout << (choice == 2 ? "Quick Sort" : "Merge Sort") << " finished in " << ms << " ms\n";
     cout << (isSorted(work) ? "Sorted [OK]\n" : "Not sorted [X]\n");
 
-    cout << "First 10 values after sort: ";
-    for (size_t i = 0; i < work.size() && i < 10; ++i) {
-        cout << work[i] << (i + 1 < work.size() && i + 1 < 10 ? ' ' : '\n');
+    cout << "First 100 values after sort: ";
+    for (size_t i = 0; i < work.size() && i < 100; ++i) {
+        cout << work[i] << (i + 1 < work.size() && i + 1 < 100 ? ' ' : '\n');
     }
 }
